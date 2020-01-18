@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 21px;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 5px 6px rgba(00, 00, 00, 0.11);
+    top: 0;
+}
+
+
+.logo {
+    width: auto !important;
+    height: 8vh !important;
+}
+
+.navbar-item {
+    font-size: 1.3125rem;
+    font-weight: bold;
+    color: #707070;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.navbar-item img {
+    width: auto;
+    height: 1.7rem;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FDFDFD;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    color: black;
+}
+
+.section * {
+    float: left;
+    margin-left: 7.3vw;
+}
+
+.section p {
+    width: 80%;
+}
+
+.section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.arr-btn {
+    margin: auto;
+    bottom: 0;
+    /* position: absolute; */
+}
+
+.product-content {
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh !important;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+
+.subcontent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.features {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(00, 00, 00, 0.25);
+
+}
+
+.features p {
+    font-size: 1.5625rem;
+    font-weight: lighter;
+}
+
+.features h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.features h2,
+.features p {
+    width: 100%;
+    margin: 1rem;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.pictures {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
