@@ -194,6 +194,10 @@ body {
     /* border: 1px solid black; */
 }
 
+.main-image:hover {
+    cursor: pointer;
+}
+
 .picture-nav {
     width: 70%;
     height: auto;
@@ -214,14 +218,18 @@ body {
     height: auto;
 }
 
-.picture-selected {
+.picture:hover {
+    cursor: pointer;
+}
+
+/* .picture-selected {
     border: 1px solid yellow;
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 17.5%;
     height: auto;
-}
+} */
 
 /* Small height divices */
 @media only screen and (max-height: 600px) {

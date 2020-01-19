@@ -10,4 +10,12 @@ window.onload = function (params) {
         }
         menu_clicked = !menu_clicked;
     };
+
+    var mainImages = document.getElementsByClassName('main-image');
+    for (let image of mainImages) {
+        image.onclick = function () {
+            // console.log(document.URL + image.attributes.src)
+            window.open(image.getAttribute('src'));
+        }
+    }
 };
