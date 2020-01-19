@@ -191,6 +191,8 @@ body {
     width: 70%;
     height: auto;
     margin: 0;
+    max-height: 50vh;
+    object-fit: cover;
     /* border: 1px solid black; */
 }
 
@@ -234,7 +236,7 @@ body {
 /* Small height divices */
 @media only screen and (max-height: 600px) {
     .section {
-        /* background-color: blueviolet; */
+        background-color: blueviolet;
     }
 
     :root {
@@ -251,6 +253,28 @@ body {
     :root {
         font-size: 9px;
     }
+
+    .features p,
+    .features h2 {
+        font-size: 1.25rem;
+    }
+
+    .menu {
+        width: 30vw;
+    }
+
+    .subcontent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .features {
+        width: 100%;
+    }
+
+    .pictures {
+        width: 80%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -262,6 +286,11 @@ body {
     :root {
         font-size: 12px;
     }
+
+    .features p,
+    .features h2 {
+        font-size: 1.2rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -272,6 +301,15 @@ body {
 
     :root {
         font-size: 13px;
+    }
+
+    .features p,
+    .features h2 {
+        font-size: smaller;
+    }
+
+    .pictures {
+        width: 70%;
     }
 }
 
