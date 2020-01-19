@@ -12,13 +12,21 @@
 
 <body>
     <div class="container">
+        <div class="menu" id="menu">
+            <a href="index.html#dk-section" class="menu-item">DK</a>
+            <a href="" class="menu-item">D7</a>
+            <a href="" class="menu-item">DKM</a>
+            <a href="" class="menu-item">DM</a>
+            <a href="" class="menu-item">DS</a>
+            <a href="" class="menu-item">DT</a>
+        </div>
         <nav class="navbar">
             <a class="navbar-item" href="index.html"><img src="res/dokma-logo.png" class="logo" alt="logo"></a>
-            <a class="navbar-item" href="">О нас</a>
+            <a class="navbar-item" href="index.html#about_us">О нас</a>
             <a class="navbar-item" href=""><img src="res/Icon awesome-whatsapp.svg" alt=""> 87714061651</a>
-            <a class="navbar-item" href=""><img src="res/Icon feather-menu.svg" alt=""></a>
+            <a class="navbar-item" id="menu-btn" href="#"><img src="res/Icon feather-menu.svg" alt=""></a>
         </nav>
-        <section class="section about-us">
+        <section class="section" id="about_us">
             <h1>О нас</h1>
             <p>Продаем самокаты фирмы Dokma по ценам производителя без посредников! <br>
                 <br>
@@ -34,12 +42,12 @@
                 Возможна доставка в другие города Казахстана.</p>
             <!-- <img src="res/Icon awesome-arrow-alt-circle-down.svg" class="arr-btn" alt=""> -->
         </section>
-        <!-- <section class="section product">
+        <section class="section product" id="dk-section">
             <div class="product-content">
                 <h1>Модель Dk. Полноприводный</h1>
                 <div class="subcontent">
                     <div class="features">
-                        <h2 class="price">Цена: 0₸</h2>
+                        <h2 class="price">Цена: 530.000₸</h2>
                         <p>Мощность: 3200w <br>
                             по 1600w на колесо. <br>
                             Батарея: 60v. 36 Ah. <br>
@@ -55,16 +63,16 @@
                     </div>
                     <div class="pictures">
                         <img class="main-image" src="DK/IMG-20191102-WA0017.jpg" alt="">
-                        <ul>
-                            <li class="picture"><img src="DK/IMG-20191102-WA0017.jpg" alt=""></li>
-                            <li class="picture"><img src="DK/IMG-20191014-WA0016.jpg" alt=""></li>
-                            <li class="picture"><img src="DK/IMG-20191102-WA0018.jpg" alt=""></li>
-                            <li class="picture"><img src="dk/IMG-20191112-WA0006.jpg" alt=""></li>
-                        </ul>
+                        <div class="picture-nav">
+                            <img class="picture" src="DK/IMG-20191102-WA0017.jpg" alt="">
+                            <img class="picture" src="DK/IMG-20191014-WA0016.jpg" alt="">
+                            <img class="picture" src="DK/IMG-20191102-WA0018.jpg" alt="">
+                            <img class="picture" src="dk/IMG-20191112-WA0006.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="section"></section>
     </div>
 </body>
