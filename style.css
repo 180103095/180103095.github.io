@@ -236,7 +236,7 @@ body {
 /* Small height divices */
 @media only screen and (max-height: 600px) {
     .section {
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
     }
 
     :root {
