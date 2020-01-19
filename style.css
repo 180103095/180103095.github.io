@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+:root {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
-    font-size: 21px;
 }
 
 .container {
@@ -14,7 +17,7 @@ body {
 }
 
 .navbar {
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     position: fixed;
@@ -85,51 +88,64 @@ body {
     /* position: absolute; */
 }
 
-.product-content {
-    width: 100%;
-    height: 100%;
-    margin-top: 10vh !important;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
+/* Small height divices */
+@media only screen and (max-height: 600px) {
+    .section {
+        /* background-color: blueviolet; */
+    }
+
+    :root {
+        font-size: 7px !important;
+    }
 }
 
-.subcontent {
-    display: flex;
-    flex-direction: column;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section {
+        /* background-color: brown; */
+    }
 
+    :root {
+        font-size: 9px;
+    }
 }
 
-.features {
-    width: 28%;
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
-    background-color: white;
-    box-shadow: 3px 3px 10px rgba(00, 00, 00, 0.25);
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .section {
+        /* background-color: aquamarine; */
+    }
 
+    :root {
+        font-size: 12px;
+    }
 }
 
-.features p {
-    font-size: 1.5625rem;
-    font-weight: lighter;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .section {
+        /* background-color: red; */
+    }
+
+    :root {
+        font-size: 13px;
+    }
 }
 
-.features h2 {
-    font-size: 1.875rem;
-    font-weight: bold;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .section {
+        /* background-color: aqua; */
+    }
 }
 
-.features h2,
-.features p {
-    width: 100%;
-    margin: 1rem;
-    box-sizing: border-box;
-    background-color: aqua;
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1900px) {
+    .section {
+        /* background-color: crimson; */
+    }
 
-.pictures {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    :root {
+        font-size: 20px;
+    }
 }
